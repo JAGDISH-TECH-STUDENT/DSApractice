@@ -17,4 +17,10 @@ class Solution {
         return n;
         
     }
+    
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] nums = {3,2,3};
+        System.out.println(s.majorityElement(nums));
+    }
 }

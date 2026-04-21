@@ -1,4 +1,4 @@
-class Solution {
+class Main {
     public int removeDuplicates(int[] nums) {
         if(nums.length==0){
             return 0;
@@ -11,5 +11,15 @@ class Solution {
             }
         }
         return j;
+    }
+    
+    public static void main(String[] args) {
+        Main m = new Main();
+        int[] nums = {1,1,2};
+        int result = m.removeDuplicates(nums);
+        System.out.println(result);
+        for (int i = 0; i < result; i++) {
+            System.out.print(nums[i] + " ");
+        }
     }
 }
